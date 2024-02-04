@@ -1,18 +1,18 @@
-/* 
+/*
     This is a CSS comment. Please add your name to this file below:
-    
-    NAME: 
+
+    NAME: Ikram Yusuf
 */
 /* -------------------------------------------------- */
-/* 
-    The code below is called the CSS reset. We will learn more 
-    about this in a future module, for now you can ignore this 
-    code and leave it as-is 
+/*
+    The code below is called the CSS reset. We will learn more
+    about this in a future module, for now you can ignore this
+    code and leave it as-is
 */
 /* -------------------------------------------------- */
 
-/* 
-    http://meyerweb.com/eric/tools/css/reset/ 
+/*
+    http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
     License: none (public domain)
 */
@@ -26,8 +26,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -39,7 +39,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,10 +64,10 @@ table {
 
 /* --------------BEGIN GLOBAL STYLES----------------- */
 /* -------------------------------------------------- */
-/*  
-    THESE STYLES HAVE BEEN WRITTEN FOR YOU. WE WILL 
-    FOCUS ON ADDING NEW STYLES TO SPECIFIC ELEMENTS 
-    BELOW THESE, LOOK FOR THE COMMENTS THAT SAY TO DO 
+/*
+    THESE STYLES HAVE BEEN WRITTEN FOR YOU. WE WILL
+    FOCUS ON ADDING NEW STYLES TO SPECIFIC ELEMENTS
+    BELOW THESE, LOOK FOR THE COMMENTS THAT SAY TO DO
 */
 /* -------------------------------------------------- */
 :root{
@@ -88,7 +88,7 @@ table {
     --white: #fff;
     --light-gray: #eaeaea;
     --med-gray: #555;
-    
+
     /* BOX SHADOW VARIABLES HERE */
     --box-shadow-sm: -3px 3px 7px var(--med-gray);
     --box-shadow-lg: -6px 6px 10px var(--med-gray);
@@ -192,7 +192,7 @@ p{
 }
 
 section > p:first-of-type, main > p{
-    padding: 1rem 0; 
+    padding: 1rem 0;
     max-width: 65ch;
     margin: 0 auto;
 }
@@ -264,7 +264,7 @@ p code, li code{
 }
 
 #section4 li::before{
-    content: 
+    content:
 }
 
 #section5 p:last-of-type{
@@ -288,7 +288,7 @@ p code, li code{
     height: 50px;
     grid-column: 1/-1;
     justify-self: end;
-}  
+}
 
 #btt svg{
     width: 50px;
@@ -313,7 +313,7 @@ footer{
 
 /* --------------BEGIN ACTIVITY STYLES----------------- */
 /* -------------------------------------------------- */
-/*  
+/*
     FOLLOW ALONG IN CLASS AND ADD YOUR STYLES AS INSTRUCTED BELOW
 */
 /* -------------------------------------------------- */
@@ -323,7 +323,16 @@ footer{
 /* content, padding, borders, margin, dev tools, inline, & block elements */
 
 /* For both links in the section */
-/* 
+#section2 a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%
+    box-shadow: var(--box-shadow-lg);
+}
+/*
     TO DO: add styles to both links in this section that will:
         - make these links display as block-level elements
         - remove the underline
@@ -361,7 +370,7 @@ footer{
 }
 
 /* For the last paragraph in the section */
-/* 
+/*
     TO DO: add styles to the last paragraph in this section that will:
         - make the background the teal-rgba color
         - add a 4 pixel dark gray border that is dashed
@@ -370,14 +379,18 @@ footer{
             - right: 60px
             - bottom: 32px
             - left: 8px
-        - add padding: 
+        - add padding:
             - top: 32px
             - right: 8px
             - bottom: 16px
             - left: 60px
 */
 #section2 div > p:last-of-type{
-    
+    background-color: var(--teal-rgba);
+    border: 4px dashed var(--dk-gray);
+    margin: 16px 60px 32px 8px;
+    padding: 32px 8px 16px 60px;
+
 }
 
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
@@ -386,7 +399,7 @@ footer{
 }
 
 /* To change the styles on each of those links when you're hovering over them with a mouse */
-/* 
+/*
     TO DO: add styles to the first link on hover in this section that will:
         - make the background the dk-blue color
         - make the text white
@@ -394,7 +407,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
-
+    background-color: var(--dk-blue);
+    color: var(--white);
+    border-color: var(--lt-blue);
+    box-shadow: var(--box-shadow-sm);
 }
 
 #section2 a:last-of-type:hover{
@@ -409,7 +425,7 @@ footer{
 /* Sizing with width and height */
 
 /* For the corgi graphic */
-/* 
+/*
     TO DO: add styles to the image in this section that will:
         - turn this into a block-level element
         - make this display at 200px wide
@@ -418,7 +434,7 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
-    
+
 }
 
 #section3 div::before{
@@ -446,7 +462,7 @@ footer{
     box-shadow: var(--box-shadow-sm);
 }
 
-/* 
+/*
     TO DO: add styles to the after pseudo-element on the div in this section that will:
         - add content (empty string)
         - make this display as a block-level element
@@ -472,7 +488,7 @@ footer{
 }
 
 /* For the second paragraph */
-/* 
+/*
     TO DO: add styles to the last paragraph in this section that will:
         - add margin:
             - top: 1rem
@@ -511,14 +527,14 @@ footer{
 }
 
 /* For the third div, let's include the a background color, allow the image to tile, but center the tiling in the container */
-/* 
+/*
     TO DO: add styles to the div with an ID of bg-img-3 in this section that will:
         - add the lt-blue color to the background
         - center the image pattern in the container
         - add the puppy-photo as a repeating background to the container
 */
 #bg-img-3{
-    
+
 }
 
 /* For the fourth div, let's style this like the second div, but let's change the height of the div to 100px, so it fits the height of the image. It will make it look like the image and div are the same height */
@@ -538,14 +554,14 @@ footer{
 /* Background patterns with images and CSS */
 
 /* For the first div, let's add the pattern from the images folder called wood, it is from Transparent Textures. Include the lt-gray background color as well */
-/* 
+/*
     TO DO: add styles to the div with an ID of pattern1 in this section that will:
         - set the background color to light-gray
-        - scale the background image to 110% 
+        - scale the background image to 110%
         - add the wood background texture from the images folder
 */
 #pattern1{
-    
+
 }
 
 /* For the second div, the pattern is from from Hero Pattern. These actually give you SVG code to paste into your CSS */
@@ -583,7 +599,7 @@ footer{
 /* Floating content with CSS */
 
 /* Let's tell our images to float to the left. Remember, they'll sort of pile up next to each other in the container, but only if they're narrow enough to fit! */
-/* 
+/*
     TO DO: add styles to the image with the ID of corgi in this section that will:
         - float this image to the left
         - add 1 rem of margin to the right of the image
@@ -597,21 +613,21 @@ footer{
     margin-top: 0.5rem;
 }
 
-/* 
+/*
     TO DO: add styles to the image with an ID of dog-house in this section that will:
         - float the image to the right
 */
 #dog-house{
-    
+
 }
 
 /* When you use floats, you have to be sure to clear them so that the rest of your page after the floats displays normally. Let's use the display section to clear the floats (because it is the next tag outside of our container in the HTML) */
-/* 
+/*
     TO DO: add styles to the display section that will:
         - clear any floats
 */
 #section9{
-    
+
 }
 
 /* ------------- SECTION 9 STYLES ---------------- */
